@@ -1,0 +1,75 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my health department",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AddressIntentHandler",
+                    "slots": [],
+                    "samples": [
+                        "where is my health department",
+                        "what is the address",
+                        "what is your address",
+                        "What is my health department address",
+                        "What is my health department's address",
+                        "What is the address for my health department",
+                        "What is the address of my health department"
+                    ]
+                },
+                {
+                    "name": "InspectionScoreIntentHandler",
+                    "slots": [
+                        {
+                            "name": "FacilityName",
+                            "type": "AMAZON.FoodEstablishment"
+                        }
+                    ],
+                    "samples": [
+                        "to check on {FacilityName}",
+                        "what is the inspection score for {FacilityName}",
+                        "Check on {FacilityName}",
+                        "How did {FacilityName} do",
+                        "What is the score for {FacilityName}",
+                        "What was the score for {FacilityName}",
+                        "What was the inspection score for {FacilityName}",
+                        "What is the inspection score of {FacilityName}"
+                    ]
+                },
+                {
+                    "name": "FoodSafetyTipIntentHandler",
+                    "slots": [],
+                    "samples": [
+                        "Food safety tip",
+                        "Give me a food safety tip"
+                    ]
+                },
+                {
+                    "name": "HoursOfOperationIntentHandler",
+                    "slots": [],
+                    "samples": [
+                        "When they are open",
+                        "When are they open",
+                        "What are the hours of operation"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
